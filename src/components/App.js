@@ -16,6 +16,12 @@ class App extends Component {
     }))
   }
 
+  removeTodo = (id) => {
+    this.setState(state => ({
+      todos : state.todos.filter(item => id !== item.id)
+    }))
+  }
+
   render()
   {
     console.log("state", this.state)
@@ -29,6 +35,7 @@ class App extends Component {
           />
         <TodoList
           todos={this.state.todos}
+          remove={this.removeTodo}
           />
       </div>
     );

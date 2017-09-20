@@ -1,12 +1,10 @@
 import React from 'react'
-const TodoList = ({todos}) => {
-
-  console.log("todos", todos)
+const TodoList = ({todos, remove}) => {
 
   return (
     <ul>
       {todos.map((todo) => (
-        <li key={todo.id}>{todo.text}</li>
+        <li onClick={() => {remove(todo.id)}} key={todo.id}>{todo.text}</li>
       ))}
     </ul>
 
