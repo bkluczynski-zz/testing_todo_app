@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import AddTodo from './AddTodo'
 import TodoList from './TodoList'
+import Title from './Title'
+
 
 class App extends Component {
 
@@ -21,6 +23,7 @@ class App extends Component {
     return (
 
       <div>
+        <Title/>
         <AddTodo
           addTodo={this.addTodo}
           />
