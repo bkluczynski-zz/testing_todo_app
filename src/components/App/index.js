@@ -7,7 +7,7 @@ import Title from '../Title'
 class App extends Component {
 
   state = {
-    todos : []
+    todos: []
   }
 
   addTodo = (todo) => {
