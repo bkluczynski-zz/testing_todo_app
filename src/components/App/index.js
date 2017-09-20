@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import AddTodo from './AddTodo'
-import TodoList from './TodoList'
-import Title from './Title'
+import AddTodo from '../AddTodo'
+import TodoList from '../TodoList'
+import Title from '../Title'
 
 
 class App extends Component {
