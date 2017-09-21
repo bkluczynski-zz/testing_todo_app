@@ -5,3 +5,7 @@ To run the app:
 - `npm install`
 - `yarn start`
 
+To run tests:
+
+- `npm test`
+
